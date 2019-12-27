@@ -1,0 +1,9 @@
+{
+  "AllAutocomplete.dontContributeToSelf": true,
+  "AllAutocomplete.languageSpecialCharacters": {
+    "css": "^[\\.#]",
+    "scss": "^[\\.#]",
+    "csv": "^[\\: ]"
+  },
+  "AllAutocomplete.showCurrentDocument": false
+}
