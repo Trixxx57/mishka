@@ -49,3 +49,59 @@ body {
 ul {
   list-style-type: none;
 }
+.header__title {
+  display: block;
+  min-height: 285px;
+  background-color: #fafafa;
+}
+.main-menu {
+  min-height: 79px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 2px solid #ececec;
+  background-color: #ffffff;
+}
+.text--h1 {
+  font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+}
+.text--link-a {
+  font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+.secondary-menu {
+  min-height: 206px;
+}
+.secondary-menu__item {
+  min-height: 103px;
+}
+.secondary-menu__item:nth-of-type(n+1) {
+  background-color: #63d1bb;
+}
+.secondary-menu__item:nth-of-type(2n) {
+  background-color: #56c3b2;
+}
+.secondary-menu__link {
+  display: block;
+  width: inherit;
+  min-height: inherit;
+}
+.week-commodity {
+  min-height: 820px;
+}
+.about-us {
+  min-height: 837px;
+}
+.feedback {
+  min-height: 650px;
+}
+.contacts {
+  min-height: 765px;
+}
+.footer {
+  min-height: 290px;
+}

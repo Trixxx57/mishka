@@ -1,0 +1,19 @@
+.secondary-menu {
+  min-height: 206px;
+}
+
+.secondary-menu__item {
+  min-height: 103px;
+  &:nth-of-type(n+1) {
+    background-color: @light-green;
+  }
+  &:nth-of-type(2n) {
+    background-color: @dark-green;
+  }
+}
+
+.secondary-menu__link {
+  display: block;
+  width: inherit;
+  min-height: inherit;
+}
