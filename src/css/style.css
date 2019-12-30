@@ -61,81 +61,81 @@ ul {
   border-bottom: 2px solid #ececec;
   background-color: #ffffff;
 }
-.text--h1 {
+.font--h1 {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 27px;
   line-height: 30px;
   color: #000000;
 }
-.text--h2 {
+.font--h2 {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
 }
-.text--h3 {
+.font--h3 {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
 }
-.text--link-main {
+.font--link-main {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
 }
-.text--secondary-link {
+.font--secondary-link {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
 }
-.text--week-b {
+.font--week-b {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 20px;
   color: #63d1bb;
   text-transform: uppercase;
 }
-.text--week-p,
-.text--week-td {
+.font--week-p,
+.font--week-td {
   font-family: 'Open Sans Regular', Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: #444444;
 }
-.text--price {
+.font--price {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
 }
-.text--advantages {
+.font--advantages {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
 }
-.text--feedback-p {
+.font--feedback-p {
   font-family: 'Open Sans Regular', Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
 }
-.text--feedback-b {
+.font--feedback-b {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
 }
-.text--section-td {
+.font--section-td {
   font-family: 'Open Sans Regular', Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
 }
-.text--developers-b {
+.font--developers-b {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 19px;
   line-height: 19px;
