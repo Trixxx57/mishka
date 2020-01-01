@@ -49,12 +49,6 @@ body {
 ul {
   list-style-type: none;
 }
-.visible {
-  display: block;
-}
-.invisible {
-  display: none;
-}
 .header__title {
   display: block;
   min-height: 285px;
