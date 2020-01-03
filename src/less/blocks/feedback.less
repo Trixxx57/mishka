@@ -1,3 +1,41 @@
 .feedback {
+  position: relative;
   min-height: 650px;
+  padding: 0 30px 0 30px;
+}
+
+.feedback__title {
+  margin-bottom: 40px;
+}
+
+.feedback__p {
+  
+  &:first-of-type {
+    margin-bottom: 65px;
+  }
+  &:last-of-type {
+    margin-bottom: 35px;
+  }
+}
+
+.feedback__previous {
+  position: absolute;
+  box-sizing: border-box;
+  width: 50%;
+  height: 52px;
+  border: 2px solid @middle-grey-1;
+  border-right: 1px solid @middle-grey-1;
+  bottom: 0;
+  left: 0;
+}
+
+.feedback__next {
+  position: absolute;
+  box-sizing: border-box;
+  width: 50%;
+  height: 52px;
+  border: 2px solid @middle-grey-1;
+  border-left: 1px solid @middle-grey-1;
+  bottom: 0;
+  right: 0;
 }

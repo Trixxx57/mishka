@@ -3,12 +3,20 @@
 }
 
 .secondary-menu__item {
-  min-height: 103px;
+  // position: relative;
+  display: block;
+  box-sizing: border-box;
+  // min-height: 103px;
+  background-repeat: no-repeat;
+  background-position: right 38px center;
   &:nth-of-type(n+1) {
     background-color: @light-green;
+    background-image: url('../image/interior-mobile.png');
   }
   &:nth-of-type(2n) {
     background-color: @dark-green;
+    background-image: url('../image/toy-mobile.png');
+    background-position: right 30px center;
   }
 }
 
@@ -16,4 +24,11 @@
   display: block;
   width: inherit;
   min-height: inherit;
+  text-decoration: none;
+  width: inherit;
+  padding-left: 30px;
+  padding-right: 160px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+
 }
