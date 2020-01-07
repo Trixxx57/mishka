@@ -2,6 +2,16 @@
   position: relative;
   min-height: 650px;
   padding: 0 30px 0 30px;
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url('../image/zigzag-line-mobile.png');
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 6px;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .feedback__title {
@@ -11,10 +21,10 @@
 .feedback__p {
   
   &:first-of-type {
-    margin-bottom: 65px;
+    margin-bottom: 35px;
   }
   &:last-of-type {
-    margin-bottom: 35px;
+    margin-bottom: 120px;
   }
 }
 
@@ -25,8 +35,12 @@
   height: 52px;
   border: 2px solid @middle-grey-1;
   border-right: 1px solid @middle-grey-1;
-  bottom: 0;
+  bottom: 140px;
   left: 0;
+  background-color: @white;
+  background-image: url('../image/huge-arrow-left-mobile.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .feedback__next {
@@ -36,6 +50,10 @@
   height: 52px;
   border: 2px solid @middle-grey-1;
   border-left: 1px solid @middle-grey-1;
-  bottom: 0;
+  bottom: 140px;
   right: 0;
+  background-color: @white;
+  background-image: url('../image/huge-arrow-right-mobile.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
