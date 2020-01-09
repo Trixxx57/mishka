@@ -1,34 +1,40 @@
 .week-commodity {
-  min-height: 800px;
+  position: relative;
+  min-height: 700px;
   background-color: @white;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 33px;
-  padding-bottom: 28px;
+  padding-top: 27px;
+  padding-bottom: 40px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 320px;
+    height: 6px;
+    background-image: url('../image/zigzag-line-mobile.png');
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .week-commodity__b {
   display: block;
-  margin-top: 9px;
-  margin-bottom: 27px;
+  margin-top: 3px;
+  margin-bottom: 23px;
 }
 
-.week-commodity__character-table {
+.week-commodity__table {
   width: 260px;
-  padding-top: 30px;
-  padding-bottom: 28px;
+  padding-top: 15px;
+  padding-bottom: 28px;  
 }
 
-.section-table__tr {
-  height: 40px;
-}
 
-.section-table__td {
-  width: 100px;
-}
 
 
 .week-commodity__price {
-  padding: 28px 0 28px 0;text-align: center;
+  padding: 24px 0 28px 0;text-align: center;
 
 }
