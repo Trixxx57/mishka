@@ -4,6 +4,8 @@
 /*Для бордера и текста кнопок*/
 /*а еще для текста*/
 /*Для подчеркивания емэйла*/
+/*Текст при наведении на ссылку*/
+/*Текст посещенной ссылки*/
 @font-face {
   font-family: 'Open Sans Regular';
   src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
@@ -92,8 +94,7 @@ ul {
   border-bottom: 2px solid #ececec;
   background-color: #ffffff;
 }
-.main-menu__link,
-.main-menu__link--logo {
+.main-menu__link {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -107,14 +108,21 @@ ul {
           align-items: center;
   text-decoration: none;
 }
+.main-menu__link:hover {
+  color: #b0b0b0;
+}
+.main-menu__link:active {
+  color: #dadada;
+}
 .main-menu__link--logo {
+  min-height: 50px;
+  width: 100%;
+  position: relative;
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
+  background-image: url('../image/mishka-logo-mobile.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .main-menu__img-logo {
   width: 86px;
@@ -320,6 +328,11 @@ ul {
 }
 .section-table-2__td:first-child {
   width: 75px;
+}
+.section-table-2__td-un {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #62d1ba;
+          text-decoration-color: #62d1ba;
 }
 .about-us {
   min-height: 800px;

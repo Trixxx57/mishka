@@ -7,22 +7,38 @@
   background-color: @white;
 }
 
-.main-menu__link, .main-menu__link--logo  {
+.main-menu__link  {
   flex-grow: 1;
   display: flex;
   position: relative;
   // justify-content: center;
   padding-left: 46px;
   align-items: center;
-  text-decoration: none;  
+  text-decoration: none;
+  &:hover {
+    color: @link-hover;
+  }
+  &:active {
+    color: @link-active;
+  }
 }
 
 .main-menu__link--logo {
-  padding-left: 0;
-  display: flex;
-  justify-content: center;
+  min-height: 50px;
+  width: 100%;
+  position: relative;
+  padding-left: 0;  
+  display: block;
+  background-image: url('../image/mishka-logo-mobile.png');    
+  background-position: center;
+  background-repeat: no-repeat;
+  // &:hover {
+  //   background-image: url('../image/mishka-logo-hover.png');
+  // }
+  // &:active {
+  //   background-image: url('../image/mishka-logo-active.png');
+  // }
 }
-
 
 .main-menu--logo {  
 }
