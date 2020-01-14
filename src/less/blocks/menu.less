@@ -1,4 +1,4 @@
-.main-menu {
+.menu {
   display: flex;
   position: relative;
   min-height: 79px;
@@ -7,12 +7,12 @@
   background-color: @white;
 }
 
-.main-menu__link  {
+.menu__link  {
   flex-grow: 1;
   display: flex;
   position: relative;
   // justify-content: center;
-  padding-left: 46px;
+  padding-left: 76px;
   align-items: center;
   text-decoration: none;
   &:hover {
@@ -23,7 +23,7 @@
   }
 }
 
-.main-menu__link--logo {
+.menu__link--logo {
   min-height: 50px;
   width: 100%;
   position: relative;
@@ -40,10 +40,10 @@
   // }
 }
 
-.main-menu--logo {  
+.menu--logo {  
 }
 
-.main-menu__img-logo {
+.menu__img-logo {
   width: 86px;
   height: 35px;
   // text-align: center;
@@ -51,7 +51,7 @@
   // margin-right: auto;
 }
 
-.main-menu__open {
+.menu__open {
   position: absolute;
   right: 0;
   top: 50%;
@@ -64,7 +64,7 @@
   cursor: pointer;
 }
 
-.main-menu__close {
+.menu__close {
   position: absolute;
   right: 0;
   top: 50%;
@@ -77,14 +77,75 @@
   cursor: pointer;
 }
 
-.main-menu__link--search {
+.menu__link--search {
   background-image: url('../image/search-mobile.png');
   background-repeat: no-repeat;
-  background-position: center left 0;
+  background-position: center left 30px;
 }
 
-.main-menu__link--cart {
+.menu__link--cart {
   background-image: url('../image/cart-mobile.png');
   background-repeat: no-repeat;
-  background-position: center left 0;
+  background-position: center left 30px;
+}
+
+@media (min-width: @tablet-width) {             /*media desktop*/
+  .menu-search {
+    flex-grow: 1;
+  }
+  
+  
+  .menu__link--logo {
+    background-position: center left 50px;
+    width: 370px;
+  }
+
+  .menu__link--search {  
+    border-left: 2px solid @middle-grey-1;
+    border-right: 2px solid @middle-grey-1;
+    background-image: url('../image/search-tablet.png');
+    background-repeat: no-repeat;
+    background-position: center;  
+  }
+
+  .menu__link--cart {
+    // width: 315px;
+    background-position: center left 34px;
+    text-align: right;
+    padding-right: 50px;
+  }
+
+  .menu {
+    display: flex;
+    position: relative;
+    min-height: 89px;
+    box-sizing: border-box;
+    border-bottom: none;
+    background-color: transparent;
+  }
+
+  .menu--tab2 {
+    text-align: left;
+    &:nth-of-type(1) {
+      min-width: 167px;
+      padding-left: 50px;
+    }
+
+    &:nth-of-type(2) {
+      flex-grow: 2;
+    }
+
+    &:nth-of-type(3) {
+      min-width: 334px;
+      padding-right: 50px;
+      text-align: right;
+    }
+  }
+
+  .menu__link--tab2 {
+    display: block;
+    text-decoration: none;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
 }

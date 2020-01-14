@@ -1,8 +1,9 @@
-.font--h1 {
+.font--b-cute {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
   font-size: 27px;
   line-height: 30px;
   color: @black;
+  display: block;
   text-align: center;
 }
 
@@ -89,4 +90,25 @@
   font-size: 19px;
   line-height: 19px;
   color: @black;    
+}
+
+.font__tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .font__mobile {
+    display: none;
+  }
+
+  .font__tablet {
+    display: block;
+  }
+
+  .font--link-delivery {
+    font-family: 'Open Sans Regular', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    color: @black;
+  }
 }

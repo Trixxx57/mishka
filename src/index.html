@@ -6,31 +6,67 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="">
-    <header class="header  cent">
-      <ul class="header__main-menu  multiple">      
-        <li class="main-menu main-menu--logo">
-          <a class="main-menu__link--logo"></a>
-          <div class="main-menu__close"></div>
+    <header class="header">
+      <ul class="header__menu  multiple">                 <!--mobile-->
+        <li class="menu menu--logo">
+          <a class="menu__link--logo"></a>
+          <div class="menu__close"></div>
         </li>
-        <li class="main-menu">
-           <a href="#" class="main-menu__link font--link-main">Каталог товаров</a>  
+        <li class="menu">
+           <a href="#" class="menu__link font--link-main">Каталог товаров</a>  
         </li>
-        <li class="main-menu">
-          <a href="#" class="main-menu__link font--link-main">Вязание на заказ</a>  
+        <li class="menu">
+          <a href="#" class="menu__link font--link-main">Вязание на заказ</a>  
         </li>
-        <li class="main-menu">
-          <a href="#" class="main-menu__link main-menu__link--search font--link-main">Поиск по сайту</a>
+        <li class="menu">
+          <a href="#" class="menu__link menu__link--search font--link-main">Поиск по сайту</a>
         </li>
-        <li class="main-menu">
-          <a href="#" class="main-menu__link main-menu__link--cart font--link-main">Корзина: пока пуста</a>
+        <li class="menu">
+          <a href="#" class="menu__link menu__link--cart font--link-main">Корзина: пока пуста</a>
         </li>
       </ul>
-      <div class="main-menu main-menu--logo single invisible">
-        <a class="main-menu__link--logo"></a>
-        <div class="main-menu__open"></div>   
+      <div class="menu menu--logo single invisible">
+        <a class="menu__link--logo"></a>
+        <div class="menu__open"></div>   
       </div>
-      <h1 class="header__title font--h1">Милые штуки <br> ручной <br> работы для дома</h1>
+
+
+
+      <ul class="header__menu--tab1">                   <!--tablet-->
+        <li class="menu menu--logo">
+          <a class="menu__link--logo"></a>
+        </li>
+        <li class="menu menu-search">
+          <a href="#" class="menu__link menu__link--search font--link-main"></a>
+        </li>
+        <li class="menu menu-cart">
+          <a href="#" class="menu__link menu__link--cart font--link-main">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      
+      <div class="header__title font--h1">
+        <ul class="header__menu--tab2">
+          <li class="menu--tab2">
+            <a href="#" class="menu__link--tab2 font--link-main">Каталог товаров</a>  
+          </li>
+          <li class="menu--tab2">
+            <a href="#" class="menu__link--tab2 font--link-main">Вязание на заказ</a>  
+          </li>
+          <li class="menu--tab2">
+            <a href="#" class="menu__link--tab2 font--link-delivery">Бесплатная доставка по России</a>  
+          </li>         
+        </ul>
+
+
+        <b class="font--b-cute font__mobile">Милые штуки <br> ручной <br> работы для дома</b>
+        <b class="font--b-cute font__tablet">Милые штуки ручной <br> работы для дома</b>
+      
+      </div>
     </header>
+
+
+
+
     <ul class="secondary-menu ">
       <li class="secondary-menu__item"><a class="secondary-menu__link font--secondary-link" href="#">Предметы интерьера</a></li>
       <li class="secondary-menu__item"><a class="secondary-menu__link font--secondary-link" href="#">Детские игрушки</a></li>      
@@ -114,8 +150,8 @@
     <script>
       var multipleMenu = document.querySelector('.multiple');
       var singleMenu = document.querySelector('.single');
-      var openMenu = document.querySelector('.main-menu__open');
-      var closeMenu = document.querySelector('.main-menu__close');
+      var openMenu = document.querySelector('.menu__open');
+      var closeMenu = document.querySelector('.menu__close');
 
       openMenu.addEventListener('click', function(event) {
         

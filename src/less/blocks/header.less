@@ -2,6 +2,8 @@
 }
 
 .header__main-menu {
+  // padding-left: 30px;
+  // padding-right: 30px;
 }
 
 .header__title {
@@ -12,7 +14,59 @@
   background-image: url('../image/hero-mobile.png');
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-position-y: -10%;
-  background-size: 115%;
-  padding-top: 72px;
+  background-position-y: 30%;
+  background-size: 100%;
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header__menu--tab1, .header__menu--tab2 {
+  display: none;
+}
+
+
+
+@media (min-width: @tablet-width) {         /*desktop width*/
+
+  .header__title {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 740px;
+    background-color: @light-grey-2;
+    background-image: url('../image/hero-desktop.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: -10%;
+    background-size: 115%;
+    padding-top: 180px;
+    border-top: 2px solid @middle-grey-1;
+    padding-left: 0;
+    }
+  
+
+  .header__menu--tab1, .header__menu--tab2 {
+    display: block;
+  
+  }
+
+  .header__menu--tab1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__menu--tab2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
+
+  }
+
+  
+
 }
