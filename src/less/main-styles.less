@@ -28,12 +28,29 @@ ul {
   /*для отлова события JS*/
 }
 
+.hidden-tablet {
+  display: none;
+}
+
+.hidden-mobile {
+  display: block;
+}
+
+
 @media (min-width: @tablet-width) {
   body {
     width: 768px;
   }
 
   .multiple, .single {
+    display: none;
+  }  
+
+  .hidden-tablet {
+    display: block;
+  }
+
+  .hidden-mobile {
     display: none;
   }
 }
