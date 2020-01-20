@@ -69,3 +69,67 @@
   // margin-right: 30px;
   cursor: pointer;
 }
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    position: relative;
+    min-height: 520px;
+    width: @tablet-width;
+    background-image: url('../image/review-tablet.png');
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    padding-top: 80px;
+    padding-right: 50px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../image/zigzag-line-desktop.png');
+      background-repeat: no-repeat;
+      width: @tablet-width;
+      height: 17px;
+      left: 0;
+      bottom: 0;
+    }    
+  }
+
+  .feedback__previous, .feedback__next {
+    border: none;
+    width: 82px;
+    height: 50px;
+    top: 350px; 
+  }
+
+  .feedback__previous {
+    right: 132px;       
+  }
+
+  .feedback__next {
+    right: 50px;     
+  }
+
+  .feedback-1 {    
+  }
+
+  .feedback__title {
+    margin-bottom: 65px;    
+  }
+
+  .feedback-p {    
+  }
+
+  .feedback-b {
+    margin-bottom: 10px;    
+  }
+
+  .feedback__btn {
+    position: absolute;
+    width: 176px;
+    min-height: 55px;
+    top: 82px;
+    right: 50px;    
+  }
+
+}

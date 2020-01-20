@@ -50,6 +50,16 @@
   .week-commodity {
     padding-right: 50px;
     padding-left: 50px;
+    min-height: 400px;
+    padding-bottom: 60px;
+    &::after {
+      width: @tablet-width;
+      height: 17px;
+      background-image: url('../image/zigzag-line-desktop.png');
+      background-repeat: no-repeat;
+      left: 50%;
+      transform: translate(-50%);      
+    }
   }
 
 
@@ -67,11 +77,18 @@
     width: 110px;
 
   }
-  
-  .week-commodity__wrapper {
+
+  .week-commodity__btn {
+    position: absolute;
+    bottom: 0;
   }
   
-  .week-commodity__description {  
+  .week-commodity__wrapper {
+    display: flex;
+  }
+  
+  .week-commodity__description {
+    position: relative;  
   }
 
 }

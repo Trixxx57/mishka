@@ -67,20 +67,14 @@
       <li class="secondary-menu__item"><a class="secondary-menu__link font--secondary-link" href="#">Предметы интерьера</a></li>
       <li class="secondary-menu__item"><a class="secondary-menu__link font--secondary-link" href="#">Детские игрушки</a></li>      
     </ul>
-
-
-
-
     <section class="week-commodity OUTB">
       <header class="week-commodity__header">
         <h2 class="week-commodity__title font--h2">Вязаные корзинки</h2>
         <b class="week-commodity__b font--week-b">Товар недели</b>
       </header>
-
-
       <div class="week-commodity__wrapper">
         
-        <div class="week-commodity__description">
+        <div class="week-commodity__description OUTR">
           <p class="week-commodity__p--info font--week-p">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="week-commodity__table section-table">
             <tr class="section-table-1__tr">
@@ -99,26 +93,28 @@
           <div class="week-commodity__price hidden-tablet font--price">Цена: 990 руб.</div>
           <button class="week-commodity__btn hidden-tablet btn">Заказать</button>
         </div>
+        <img class="week-commodity__img hidden-tablet" title="Пряжа недели" src="image/triple-set-tablet.png" width="333" height="404">
 
-        <img class="week-commodity__img" title="Пряжа недели" src="image/triple-set-mobile.png" width="260" height="315">
+        <img class="week-commodity__img hidden-mobile" title="Пряжа недели" src="image/triple-set-mobile.png" width="260" height="315">
 
         <div class="week-commodity__price hidden-mobile font--price">Цена: 990 руб.</div>
         <button class="week-commodity__btn hidden-mobile btn">Заказать</button>
-
       </div>
     </section>
     <section class="about-us ">
       <h2 class="about-us__title font--h2">Коротко о нас</h2>
-      <ul class="about-us__advantages advantages">
-        <li class="advantages__li font--advantages ">Экологически <br> чистые материалы</li>
-        <li class="advantages__li font--advantages ">Скандинавский стиль <br> по российской цене</li>
-        <li class="advantages__li font--advantages ">Увеличивает лайки <br> на фотографиях</li>
-        <li class="advantages__li font--advantages ">Связано вручную с <br> любовью и умилением</li>
-        <li class="advantages__li font--advantages ">Поддержка отечественного <br> производителя</li>
-        <li class="advantages__li font--advantages ">Поставляется в <br> подарочной упаковке</li>
+      <ul class="about-us__advantages advantages OUTR">
+        <li class="advantages__li font--advantages OUTG">Экологически <br> чистые материалы</li>
+        <li class="advantages__li font--advantages OUTG">Скандинавский стиль <br> по российской цене</li>
+        <li class="advantages__li font--advantages OUTG">Увеличивает лайки <br> на фотографиях</li>
+        <li class="advantages__li font--advantages OUTG">Связано вручную с <br> любовью и умилением</li>
+        <li class="advantages__li font--advantages OUTG">Поддержка отечественного <br> производителя</li>
+        <li class="advantages__li font--advantages OUTG">Поставляется в <br> подарочной упаковке</li>
       </ul>
     </section>
-    <section class="feedback ">
+
+
+    <section class="feedback OUTG">
       <div class="feedback-1">
         <h2 class="feedback__title font--h2">Отзывы</h2>
         <p class="feedback__p font--feedback-p">Я молодая мама, но всё равно фотографии не 
@@ -132,16 +128,26 @@
       <button class="feedback__previous" title="Предыдущий отзыв"></button>
       <button class="feedback__next" title="Следующий отзыв"></button>
       <button class="feedback__btn btn">НАПИСАТЬ</button> 
-    </section>    
+    </section>
+    
+    
     <section class="contacts ">
       <h3 class="contacts__title font--h3">Контакты</h3>
-      <table class="contacts__table">
+      <table class="contacts__table hidden-mobile">
         <tr class="section-table-2__tr">
           <td class="section-table-2__td font--section-td">e-mail:</td>
           <td class="section-table-2__td section-table-2__td-un font--section-td">info@mimimishkashop.ru</td>
         </tr>
         <tr class="section-table-2__tr">
-          <td class="section-table-2__td font--section-td">адрес</td>
+          <td class="section-table-2__td font--section-td">адрес:</td>
+          <td class="section-table-2__td font--section-td">г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101</td>
+        </tr>
+      </table>
+      <table class="contacts__table hidden-tablet">
+        <tr class="section-table-2__tr">
+          <td class="section-table-2__td font--section-td">e-mail:</td>
+          <td class="section-table-2__td section-table-2__td-un font--section-td">info@mimimishkashop.ru</td>
+          <td class="section-table-2__td font--section-td">адрес:</td>
           <td class="section-table-2__td font--section-td">г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101</td>
         </tr>
       </table>
@@ -149,8 +155,9 @@
     </section>
     <div class="write-us ">
       <button class="write-us__btn btn">НАПИШИТЕ НАМ</button>
-    </div>    
-    <footer class="footer ">      
+    </div>
+    <footer class="footer ">
+      <a class="footer__logo hidden-desktop"></a>      
       <div class="footer-social">
         <a class="social" href="#"></a>
         <a class="social" href="#"></a>
@@ -160,7 +167,7 @@
         <p class="footer-developers__b font--developers-b">Разработано</p>
         <a class="footer-developers__logo" href="#"></a>
       </div>
-    </footer>  
+    </footer>
     <script>
       var multipleMenu = document.querySelector('.multiple');
       var singleMenu = document.querySelector('.single');
