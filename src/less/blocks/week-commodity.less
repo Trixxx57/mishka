@@ -52,6 +52,7 @@
     padding-left: 50px;
     min-height: 400px;
     padding-bottom: 60px;
+    padding-top: 40px;
     &::after {
       width: @tablet-width;
       height: 17px;
@@ -66,7 +67,7 @@
   .week-commodity__header {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
   }
 
   .week-commodity__title {
@@ -75,23 +76,39 @@
 
   .week-commodity__b {
     width: 110px;
-
+    margin: 0;
+    // margin-bottom: 30px;
   }
 
   .week-commodity__btn {
     position: absolute;
     bottom: 0;
+    width: 290px;
   }
   
   .week-commodity__wrapper {
     display: flex;
+    padding-top: 40px;
   }
   
   .week-commodity__description {
-    position: relative;  
+    position: relative;
+  }
+
+  .week-commodity__table {
+    padding-top: 30px;
+    padding-bottom: 15px;  
+  }
+
+  .week-commodity__price {
+    width: 80%;
   }
 
 }
 
 @media (min-width: @desktop-width) {  
+  .week-commodity__btn {
+    font-size: 17px;
+    line-height: 20px;
+  }
 }
