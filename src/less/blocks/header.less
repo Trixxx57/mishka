@@ -28,7 +28,7 @@
 
 
 
-@media (min-width: @tablet-width) {         /*desktop width*/
+@media (min-width: @tablet-width) {         /*tablet width*/
 
   .header__title {
     display: block;
@@ -67,26 +67,52 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {            /*desktop width*/
   .header__menu--tab1, .header__menu--tab2 {
     display: none;
   }
 
   .header__menu--tab3, .header__menu--tab4 {
-    display: block;
-  
+    display: block;  
   }
 
   .header__menu--tab3 {
     display: flex;
     justify-content: space-between;
+    // padding: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+
+  }
+
+
+
+
+
+
+
+
+  .header__title{
+    width: @desktop-width;
+    padding-top: 173px;
+    background-color: @light-grey-2;
+    background-image: url('../image/hero-desktop.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: -15%;
+    background-size: 70%;
   }
 
   .header__menu--tab4 {
     position: absolute;
     top: 0;
     width: 100%;
+    min-height: 60px;
     display: flex;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
     justify-content: space-between;
   }  
+
 }

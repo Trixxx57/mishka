@@ -89,15 +89,17 @@
   background-position: center left 30px;
 }
 
-@media (min-width: @tablet-width) {             /*media desktop*/
-  .menu-search {
+@media (min-width: @tablet-width) {             /*media tablet*/
+  .menu--search {
     flex-grow: 1;
   }
   
+  .menu--logo {
+    min-width: 370px;
+  }
   
   .menu__link--logo {
     background-position: center left 50px;
-    width: 370px;
   }
 
   .menu__link--search {  
@@ -150,5 +152,104 @@
   }
 }
 
-@media (min-width: @desktop-width) {  
+@media (min-width: @desktop-width) {            /*media desktop*/
+  
+  
+  .menu--tab2 {
+    &:nth-of-type(1) {
+      min-width: 185px;
+      padding-left: 0;
+      text-align: left;
+      border-right: 2px solid @middle-grey-1;
+    }
+
+    &:nth-of-type(2) {
+      min-width: 193px;
+      text-align: left;
+      padding-left: 34px;
+    }      
+  }
+
+  .menu--logo {
+    display: flex;
+    padding: 0;
+    min-width: 0;
+    justify-content: center;
+    // align-items: center;
+    flex-grow: 2;
+  }
+
+  .menu__link--logo {
+    background-image: url('../image/mishka-logo-desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 200px;
+
+  }
+
+  .menu--search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid @middle-grey-1;
+    border-right: 2px solid @middle-grey-1;
+    min-width: 84px;
+  }
+
+  .menu__link--search {
+    width: 18px;
+    height: 19px;
+    background-image: url('../image/search-desktop.png');
+    background-repeat: no-repeat;
+    border: none;
+
+  }
+
+  .menu--cart {
+    display: flex;
+    background-image: none;
+    align-items: center;
+    min-width: 268px;
+    
+  }
+
+  .menu__link--cart {
+    // position: absolute;
+    padding: 0;
+    padding-left: 85px;
+    text-decoration: none;
+    background-image: url('../image/cart-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center left 30px;
+    position: relative;
+
+  }
+
+
+
+  .menu--tab4 {
+    display: flex;
+    align-items: center;
+
+
+    &:nth-of-type(1) {
+      width: 185px;
+      padding-left: 0;
+    }
+    &:nth-of-type(2) {
+      width: 193px;
+      padding-left: 34px;
+    }
+    &:last-of-type {
+      margin-left: 100px;
+      margin-left: auto;
+    }
+  }
+
+  .menu__link--tab4 {
+    text-decoration: none;
+  }
+
+  
+
 }
