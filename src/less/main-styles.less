@@ -36,6 +36,10 @@ ul {
   display: block;
 }
 
+.hidden-desktop {
+  display: none;
+}
+
 
 @media (min-width: @tablet-width) {
   body {
@@ -58,5 +62,13 @@ ul {
 @media (min-width: @desktop-width) {  
   body {
     width: @desktop-width;
+  }
+
+  .hidden-tablet {
+    display: none;
+  }
+
+  .hidden-desktop {
+    display: block;
   }
 }

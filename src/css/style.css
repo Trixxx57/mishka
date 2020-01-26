@@ -66,6 +66,9 @@ ul {
 .hidden-mobile {
   display: block;
 }
+.hidden-desktop {
+  display: none;
+}
 @media (min-width: 768px) {
   body {
     width: 768px;
@@ -84,6 +87,12 @@ ul {
 @media (min-width: 1250px) {
   body {
     width: 1250px;
+  }
+  .hidden-tablet {
+    display: none;
+  }
+  .hidden-desktop {
+    display: block;
   }
 }
 .btn {
@@ -871,6 +880,74 @@ ul {
 }
 @media (min-width: 1250px) {
   /*media desktop*/
+  .week-commodity {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 70px;
+  }
+  .week-commodity::after {
+    content: '';
+    position: absolute;
+    width: 1050px;
+    height: 23px;
+    background-image: url('../image/zigzag-line-desktop.png');
+    background-repeat: repeat-x;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .week-commodity__header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 100px;
+    top: 140px;
+    z-index: 10;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .week-commodity__b {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 170px;
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+  }
+  .week-commodity__title {
+    width: 550px;
+  }
+  .week-commodity__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 0;
+  }
+  .week-commodity__description {
+    width: 350px;
+    padding-top: 170px;
+    padding-left: 0;
+  }
+  .week-commodity__table {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  .week-commodity__price {
+    margin-top: 65px;
+  }
   .week-commodity__btn {
     font-size: 17px;
     line-height: 20px;
@@ -920,6 +997,18 @@ ul {
 }
 @media (min-width: 1250px) {
   /*media desktop*/
+  .section-table-2__td:nth-of-type(1) {
+    width: 76px;
+  }
+  .section-table-2__td:nth-of-type(2) {
+    width: 260px;
+  }
+  .section-table-2__td:nth-of-type(3) {
+    width: 78px;
+  }
+  .section-table-2__td:nth-of-type(4) {
+    width: 260px;
+  }
 }
 .about-us {
   min-height: 800px;
@@ -936,6 +1025,20 @@ ul {
 }
 @media (min-width: 1250px) {
   /*media desktop*/
+  .about-us {
+    padding: 0 100px 0 100px;
+  }
+  .about-us__title {
+    padding-left: 175px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
+  .about-us__advantages {
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-bottom: 70px;
+  }
 }
 .advantages__li {
   position: relative;
@@ -995,6 +1098,21 @@ ul {
 }
 @media (min-width: 1250px) {
   /*media desktop*/
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .advantages__li {
+    width: 300px;
+    min-height: 130px;
+  }
 }
 .feedback {
   position: relative;
@@ -1112,6 +1230,48 @@ ul {
     font-size: 17px;
     line-height: 20px;
   }
+  .feedback {
+    position: relative;
+    min-height: 520px;
+    width: 1050px;
+    background-image: url('../image/review-desktop.png');
+    background-repeat: no-repeat;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0;
+    padding-top: 80px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .feedback::after {
+    content: '';
+    position: absolute;
+    background-image: url('../image/zigzag-line-desktop.png');
+    background-repeat: repeat-x;
+    width: 1050px;
+    height: 23px;
+    left: 0;
+    bottom: 0;
+  }
+  .feedback-1 {
+    margin-left: 175px;
+  }
+  .feedback__title {
+    margin-bottom: 60px;
+  }
+  .feedback__p:first-of-type {
+    margin-bottom: 40px;
+  }
+  .feedback__p:last-of-type {
+    margin-top: 5px;
+    margin-bottom: 118px;
+  }
+  .feedback__previous {
+    top: 340px;
+  }
+  .feedback__next {
+    top: 340px;
+  }
 }
 .contacts {
   min-height: 765px;
@@ -1158,7 +1318,6 @@ ul {
   }
   .contacts__map {
     width: 768px;
-    min-height: 460px;
     background-image: url('../image/map-tablet@1x.png');
   }
   .contacts__map::after {
@@ -1174,6 +1333,67 @@ ul {
 }
 @media (min-width: 1250px) {
   /*media desktop*/
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: relative;
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 106px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 360px;
+  }
+  .contacts::after {
+    content: '';
+    position: absolute;
+    top: 133px;
+    left: 163px;
+    width: 47px;
+    height: 81px;
+    background-image: url('../image/flag-desktop.png');
+    background-repeat: no-repeat;
+  }
+  .contacts-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 350px;
+  }
+  .contacts__title {
+    margin-bottom: 40px;
+  }
+  .contacts__map {
+    position: relative;
+    display: block;
+    width: 525px;
+    height: 457px;
+    background-image: url('../image/map-desktop@1x.png');
+  }
+  .contacts__map::after {
+    content: '';
+    position: absolute;
+    background-image: url('../image/map-pin-tablet.png');
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -90%);
+            transform: translate(-50%, -90%);
+  }
 }
 .footer {
   min-height: 100px;
@@ -1256,6 +1476,9 @@ ul {
 }
 @media (min-width: 1250px) {
   /*media desktop*/
+  .footer {
+    padding: 55px 100px 55px 100px;
+  }
 }
 .social {
   margin-right: 40px;
@@ -1296,6 +1519,12 @@ ul {
 }
 @media (min-width: 1250px) {
   /*media desktop*/
+  .write-us {
+    padding-bottom: 0;
+  }
+  .write-us__btn {
+    margin-bottom: 0;
+  }
 }
 .visible {
   display: block;

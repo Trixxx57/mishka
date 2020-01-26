@@ -139,4 +139,55 @@
     font-size: 17px;
     line-height: 20px;
   }
+
+  .feedback {
+    position: relative;
+    min-height: 520px;
+    width: @desktop-width - (100px * 2);
+    background-image: url('../image/review-desktop.png');
+    background-repeat: no-repeat;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0;
+    padding-top: 80px;    
+    box-sizing: border-box;
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../image/zigzag-line-desktop.png');
+      background-repeat: repeat-x;
+      width: @desktop-width - (100px * 2);
+      height: 23px;
+      left: 0;
+      bottom: 0;
+    }
+  } 
+
+  .feedback-1 {
+    margin-left: 175px;
+    // padding-top: 80px;
+  }
+
+  .feedback__title {
+    margin-bottom: 60px;
+  }
+
+  .feedback__p {  
+    &:first-of-type {
+      margin-bottom: 40px;
+    }
+    &:last-of-type {
+      margin-top: 5px;
+      margin-bottom: 118px;    
+    }
+  }
+
+  .feedback__previous {
+    top: 340px;
+  }
+
+  .feedback__next {
+    top: 340px;
+  }
+  
 }
