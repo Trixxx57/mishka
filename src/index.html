@@ -25,10 +25,14 @@
           <a href="#" class="menu__link menu__link--cart font--link-main">Корзина: пока пуста</a>
         </li>
       </ul>
-      <div class="menu menu--logo single invisible hidden-tablet">
-        <a class="menu__link--logo"></a>
+
+
+      <div class="menu menu--logo single invisible">
+        <a class="menu__link--logo hidden-mobile"></a>
         <div class="menu__open "></div>
       </div>
+
+
       <ul class="header__menu--tab1">                 <!--tablet top-->
         <li class="menu menu--logo">
           <a class="menu__link--logo"></a>
@@ -218,12 +222,14 @@
       var closeMenu = document.querySelector('.menu__close');
       openMenu.addEventListener('click', function(event) {        
         event.preventDefault();
+        singleMenu.classList.remove('visible');
         singleMenu.classList.add('invisible');
         multipleMenu.classList.remove('invisible');
       });
       closeMenu.addEventListener('click', function(event) {
       event.preventDefault();
       singleMenu.classList.remove('invisible');
+      singleMenu.classList.add('visible');
       multipleMenu.classList.add('invisible');
       });     
     </script>  
