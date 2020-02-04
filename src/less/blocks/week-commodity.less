@@ -6,14 +6,22 @@
   padding-right: 30px;
   padding-top: 27px;
   padding-bottom: 40px;
+  text-align: center;
+  // @media (min-width: 400px) and (max-width: 767px) {
+  //   display: flex;
+  //   flex-wrap: nowrap;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
   &::after {
     content: '';
     position: absolute;
     bottom: 0;
-    width: 320px;
+    width: 100%;
     height: 6px;
     background-image: url('../image/zigzag-line-mobile.png');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     left: 50%;
     transform: translate(-50%);
   }
@@ -43,6 +51,26 @@
 .week-commodity__price {
   padding: 24px 0 28px 0;text-align: center;
 
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+  .week-commodity__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  .week-commodity__description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 
