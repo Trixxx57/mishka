@@ -45,8 +45,8 @@
     background-image: url('../image/hero-desktop.png');
     background-repeat: no-repeat;
     background-position-x: 50%;
-    background-position-y: -10%;
-    background-size: 115%;
+    background-position-y: 0;
+    background-size: 100%;
     padding-top: 180px;
     border-top: 2px solid @middle-grey-1;
     padding-left: 0;
@@ -55,8 +55,7 @@
   
 
   .header__menu--tab1, .header__menu--tab2 {
-    display: block;
-  
+    display: block;    
   }
 
   .header__menu--tab1 {
@@ -72,6 +71,22 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: @tablet-width + 1px) 
+and (max-width: @desktop-width) {
+  
+  .header__menu--tab1 { 
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;    
+  }
+  .header__menu--tab2 {
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row; 
+  }  
+} 
 
 @media (min-width: @desktop-width) {            /*desktop width*/
   .header__menu--tab1, .header__menu--tab2 {

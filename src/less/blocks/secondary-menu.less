@@ -48,7 +48,6 @@
       width: 768px;
       height: 24px;      
     }
-
   }
   .secondary-menu__item {
     box-sizing: border-box;
@@ -68,6 +67,17 @@
     // // padding-right: 280px;
     // padding-top: 25px;
     // padding-bottom: 28px;
+  }
+}
+
+@media (min-width: @tablet-width + 1px) 
+and (max-width: @desktop-width) {
+  .secondary-menu {
+    &::after {      
+      background-image: url('../image/zigzag-fill-desktop.png');
+      width: 100%;
+      background-repeat: repeat;     
+    }
   }
 }
 

@@ -82,10 +82,10 @@
     padding-bottom: 60px;
     padding-top: 40px;
     &::after {
-      width: @tablet-width;
+      width: 100%;
       height: 17px;
       background-image: url('../image/zigzag-line-desktop.png');
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       left: 50%;
       transform: translate(-50%);      
     }
@@ -131,8 +131,26 @@
   .week-commodity__price {
     width: 80%;
   }
-
 }
+
+@media (min-width: @tablet-width + 1px) and (max-width: @desktop-width) {
+  .week-commodity {
+
+  }
+  
+  .week-commodity__description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+  }
+
+  .week-commodity__price {
+    text-align: left;
+  }
+}
+
+  
 
 @media (min-width: @desktop-width) {             /*media desktop*/
 
