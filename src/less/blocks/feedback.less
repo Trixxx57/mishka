@@ -92,6 +92,7 @@
     width: @tablet-width;
     background-image: url('../image/review-tablet.png');
     background-repeat: no-repeat;
+    // background-size: contain;
     padding: 0;
     margin: 0;
     padding-top: 80px;
@@ -102,8 +103,8 @@
       content: '';
       position: absolute;
       background-image: url('../image/zigzag-line-desktop.png');
-      background-repeat: no-repeat;
-      width: @tablet-width;
+      background-repeat: repeat;
+      width: 100%;
       height: 17px;
       left: 0;
       bottom: 0;
@@ -148,7 +149,16 @@
   }
 }
 
+@media (min-width: @tablet-width + 1px) and (max-width: @desktop-width) {
+  .feedback {
+    width: 100%;
+  }
 
+  .feedback__p:first-of-type {
+    text-align: justify;
+  }
+}
+  
 
 @media (min-width: @desktop-width) {            /*media desktop*/
   .feedback__btn {

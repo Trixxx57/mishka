@@ -43,13 +43,23 @@
     flex-wrap: wrap;
     height: 400px;
     flex-direction: column;
-
+    // justify-content: space-between;
+    align-items: ;
   }
   
   .advantages__li {
     padding: 0;
     width: 300px;
   }
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) { 
+  .advantages__li:nth-of-type(4), 
+  .advantages__li:nth-of-type(5), 
+  .advantages__li:nth-of-type(6) {
+    margin-left: auto;
+    margin-right: 10%;
+  } 
 }
 
 @media (min-width: @desktop-width) {            /*media desktop*/

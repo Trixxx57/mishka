@@ -63,7 +63,7 @@
   }
 
   .contacts__map {
-    width: @tablet-width;
+    // width: calc(@tablet-width - 20px);
     // min-height: 460px;
     background-image: url('../image/map-tablet@1x.png');
     &::after {
@@ -78,6 +78,18 @@
     }
   }
 }
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .contacts__map {
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .contacts {
+    padding-right: 0;
+  }
+}
+  
 
 @media (min-width: @desktop-width) {            /*media desktop*/
   .contacts {
