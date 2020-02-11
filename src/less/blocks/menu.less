@@ -18,12 +18,12 @@
     justify-content: center;
     padding-right: 76px;
   }
-  &:hover {
-    color: @link-hover;
-  }
-  &:active {
-    color: @link-active;
-  }
+  // &:hover {
+  //   color: @link-hover;
+  // }
+  // &:active {
+  //   color: @link-active;
+  // }
 }
 
 .menu__link--logo {
@@ -87,6 +87,9 @@
   background-image: url('../image/search-mobile.png');
   background-repeat: no-repeat;
   background-position: center left 30px;
+  &:hover {
+    background-image: url('../image/search-hover.png');
+  }
 }
 
 .menu__link--cart {
@@ -115,6 +118,9 @@
     background-image: url('../image/search-tablet.png');
     background-repeat: no-repeat;
     background-position: center;  
+    &:hover {
+      background-image: url('../image/search-hover.png');
+    }
   }
 
   .menu__link--cart {
@@ -212,7 +218,7 @@
 
   .menu--search {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     border-left: 2px solid @middle-grey-1;
     border-right: 2px solid @middle-grey-1;
@@ -220,18 +226,27 @@
   }
 
   .menu__link--search {
-    width: 18px;
-    height: 19px;
+    // width: 18px;
+    // height: 19px;
+    display: block;
+    width: 100%;
     background-image: url('../image/search-desktop.png');
     background-repeat: no-repeat;
     border: none;
-
+    &:hover {
+      // background-image: none;
+      background-image: url('../image/search-hover.png');
+    }
+    &:active {
+      // background-image: none;
+      background-image: url('../image/search-active.png');
+    } 
   }
 
   .menu--cart {
     display: flex;
     background-image: none;
-    align-items: center;
+    // align-items: center;
     min-width: 268px;
     
   }
@@ -240,11 +255,21 @@
     // position: absolute;
     padding: 0;
     padding-left: 85px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     text-decoration: none;
     background-image: url('../image/cart-mobile.png');
     background-repeat: no-repeat;
     background-position: center left 30px;
     position: relative;
+    &:hover {
+      // background-image: none;
+      background-image: url('../image/cart-hover.png');
+    }
+    &:active {
+      // background-image: none;
+      background-image: url('../image/cart-active.png');
+    } 
 
   }
 
