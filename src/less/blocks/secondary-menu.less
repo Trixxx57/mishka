@@ -12,12 +12,22 @@
   &:nth-of-type(n+1) {
     background-color: @light-green;
     background-image: url('../image/interior-mobile.png');
+    &:active {
+      background-image: none;
+      background-image: url('../image/interior-active.png');
+    }
   }
   &:nth-of-type(2n) {
     background-color: @dark-green;
     background-image: url('../image/toy-mobile.png');
-    background-position: right 30px center;
+    background-position: right 38px center;
+    &:active {
+      background-image: none;
+      background-image: url('../image/toy-active.png');
+    }
   }
+
+  
 }
 
 .secondary-menu__link {
@@ -104,20 +114,80 @@ and (max-width: @desktop-width) {
     box-sizing: border-box;
     // min-height: 103px;
     background-repeat: no-repeat;
-    background-position: right 58px top 20px;
     &:nth-of-type(n+1) {
       background-color: @light-green;
-      background-image: url('../image/interior-mobile.png');
+      // background-image: url('../image/interior-mobile.png');
+      background-position: right 50px top 20px;
+      &:hover {
+        background-position: right 50px top 15px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          height: 5px;
+          width: 100%;
+          top: -5px;
+          left: 0;
+          background-color: @light-green;
+          z-index: 100;
+        }
+      }
+      &:active {
+        background-position: right 50px top 15px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          height: 5px;
+          width: 100%;
+          top: -5px;
+          left: 0;
+          background-color: @light-green;
+          z-index: 100;
+        }
+      }
     }
     &:nth-of-type(2n) {
       background-color: @dark-green;
       background-image: url('../image/toy-mobile.png');
       background-position: right 50px top 20px;
+      &:hover {
+        background-position: right 50px top 15px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          height: 5px;
+          width: 100%;
+          top: -5px;
+          left: 0;
+          background-color: @dark-green;
+          z-index: 100;
+        }
+      }
+      &:active {
+        background-position: right 50px top 15px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          height: 5px;
+          width: 100%;
+          top: -5px;
+          left: 0;
+          background-color: @dark-green;
+          z-index: 100;
+        }
+      }
     }
   }
 
   .secondary-menu__link {
     padding-left: 100px;
     padding-top: 30px;
+
+    &:active, &:hover {
+      padding-top: 25px;
+    }
   }
 }
