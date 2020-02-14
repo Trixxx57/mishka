@@ -9,6 +9,7 @@
 
 .footer-social {
   position: relative;
+  
   min-height: 78px;
   background-color: @middle-grey-2;
   display: flex;
@@ -16,17 +17,20 @@
   // padding-left: 100px;
   // padding-right: 100px;
   align-items: center;
-  &::after {
-    content: '';
-    position: absolute;
-    width: 260px;
-    height: 1px;
-    // background-color: red;
-    background-image: url('../image/divider-mobile.png');
-    background-repeat: no-repeat;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%; 0);
+  @media (max-width: @tablet-width) {
+    width: 100%;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%-20%;
+      height: 1px;
+      // background-color: red;
+      background-image: url('../image/divider-mobile.png');
+      background-repeat: repeat;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%; 0);
+    }
   }
 }
 
@@ -64,8 +68,8 @@
   .footer {
     display: flex;
     background-color: @middle-grey-2;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
     box-sizing: border-box;
     justify-content: space-between;
     align-items: center;

@@ -21,6 +21,19 @@
   min-height: 457px;
   background-image: url('../image/map-mobile@1x.png');
   background-repeat: no-repeat;
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url('../image/map-pin-tablet.png');
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 100px;
+    // left: 363px;
+    // bottom: 216px;
+    left: 49%;
+    top: 42%;
+    transform: translate(-50%; -50%);
+  }
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
@@ -66,6 +79,29 @@
     // width: calc(@tablet-width - 20px);
     // min-height: 460px;
     background-image: url('../image/map-tablet@1x.png');
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   background-image: url('../image/map-pin-tablet.png');
+    //   background-repeat: no-repeat;
+    //   width: 67px;
+    //   height: 100px;
+    //   // left: 363px;
+    //   // bottom: 216px;
+    //   left: 50%;
+    //   top: 50%;
+    //   transform: translate(-50%; -50%);
+    // }
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .contacts__map {
+    background-size: cover;
+    width: @tablet-width;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     &::after {
       content: '';
       position: absolute;
@@ -73,16 +109,12 @@
       background-repeat: no-repeat;
       width: 67px;
       height: 100px;
-      left: 363px;
-      bottom: 216px;
+      // left: 363px;
+      // bottom: 216px;
+      left: 49%;
+      top: 42%;
+      transform: translate(-50%; -50%);
     }
-  }
-}
-
-@media (min-width: @tablet-width) and (max-width: @desktop-width) {
-  .contacts__map {
-    background-size: cover;
-    width: 100%;
   }
   
   .contacts {
